@@ -16,3 +16,8 @@
 .no-shadow {
   box-shadow: none;
 }
+
+li img {
+  box-sizing: border-box;
+  margin-top: 15px;
+}
