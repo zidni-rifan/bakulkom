@@ -12,3 +12,7 @@
 #search-desktop::placeholder {
   color: rgb(153, 153, 153);
 }
+
+.no-shadow {
+  box-shadow: none;
+}
