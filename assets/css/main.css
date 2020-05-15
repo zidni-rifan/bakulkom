@@ -2,7 +2,8 @@
   bottom: 0;
   height: 45px;
 }
-#search-desktop {
+#search-desktop,
+#search-mobile {
   box-sizing: border-box;
   border: 0;
   border-radius: 15px;
@@ -37,6 +38,7 @@ li img {
 @media screen and (max-width: 768px) {
   .jumbotron h1 {
     font-size: 5em;
+    margin-top: 70px;
   }
   .jumbotron h4 {
     font-size: 2em;
@@ -51,9 +53,39 @@ li img {
 
   .jumbotron h1 {
     font-size: 3em;
+    margin-top: 50px;
   }
 
   .jumbotron h4 {
     font-size: 1.2em;
+  }
+
+  #top-nav-mobile {
+    margin-top: -50px;
+  }
+
+  #top-nav-mobile .brand-logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 577px) {
+  #top-nav-mobile {
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  #top-nav-mobile {
+    margin-top: -60px;
+  }
+
+  #top-nav-mobile .brand-logo {
+    left: 7.5%;
+    transform: translateX(0);
+  }
+  #top-nav-mobile #search-mobile {
+    margin-top: 10px;
+    width: 350px;
   }
 }
