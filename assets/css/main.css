@@ -37,7 +37,6 @@ li img {
 
 .card-title {
   font-size: 1.2em !important;
-  margin-top: -15px;
   line-height: 1.2em !important;
 }
 
@@ -46,8 +45,7 @@ li img {
 }
 
 .card-content {
-  padding-left: 5% !important;
-  padding-right: 5% !important;
+  padding: 5% !important;
 }
 
 @media screen and (max-width: 768px) {
