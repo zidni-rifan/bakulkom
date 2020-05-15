@@ -35,6 +35,21 @@ li img {
   margin-bottom: -20px;
 }
 
+.card-title {
+  font-size: 1.2em !important;
+  margin-top: -15px;
+  line-height: 1.2em !important;
+}
+
+.price {
+  margin-top: -3px;
+}
+
+.card-content {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}
+
 @media screen and (max-width: 768px) {
   .jumbotron h1 {
     font-size: 5em;
