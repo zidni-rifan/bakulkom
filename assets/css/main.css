@@ -27,6 +27,7 @@ li img {
 .jumbotron {
   height: 300px;
   margin-top: -70px;
+  margin-bottom: 20px;
   padding-top: 40px;
 }
 
@@ -38,6 +39,8 @@ li img {
 .card-title {
   font-size: 1.2em !important;
   line-height: 1.2em !important;
+  height: 2.7rem;
+  overflow: hidden;
 }
 
 .price {
