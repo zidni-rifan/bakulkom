@@ -9,6 +9,7 @@
   padding-left: 15px;
   height: 40px;
 }
+
 #search-desktop::placeholder {
   color: rgb(153, 153, 153);
 }
@@ -20,4 +21,39 @@
 li img {
   box-sizing: border-box;
   margin-top: 15px;
+}
+
+.jumbotron {
+  height: 300px;
+  margin-top: -70px;
+  padding-top: 40px;
+}
+
+.jumbotron h1 {
+  font-size: 7em;
+  margin-bottom: -20px;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 5em;
+  }
+  .jumbotron h4 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .jumbotron {
+    height: 200px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .jumbotron h1 {
+    font-size: 3em;
+  }
+
+  .jumbotron h4 {
+    font-size: 1.2em;
+  }
 }
