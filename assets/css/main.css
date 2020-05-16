@@ -59,6 +59,11 @@ li img {
   .jumbotron h4 {
     font-size: 2em;
   }
+
+  .catalog-product .col {
+    padding-left: 0.3rem !important;
+    padding-right: 0.3rem !important;
+  }
 }
 @media screen and (max-width: 576px) {
   .jumbotron {
