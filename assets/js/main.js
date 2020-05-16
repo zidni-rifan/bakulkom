@@ -1,11 +1,10 @@
-// Load page content
-
 document.addEventListener("DOMContentLoaded", function () {
   document
-    .querySelectorAll("#nav-desktop a, #nav-mobile a")
+    .querySelectorAll(
+      "#nav-desktop img, #nav-desktop .brand-logo, #nav-mobile img"
+    )
     .forEach(function (elm) {
       elm.addEventListener("click", function (event) {
-        // Muat konten halaman yang dipanggil
         page = event.target.parentElement.getAttribute("href").substr(1);
         loadPage(page);
       });
