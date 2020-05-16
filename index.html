@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#76ff03" />
     <meta
       name="Description"
-      content="Author: Zidni Rif'an, BakulKom is a e-commerce website that sells computer peripheral"
+      content="BakulKom is a e-commerce website that sells computer peripheral"
     />
     <title>BakulKom</title>
     <link
@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="assets/icons/icons-192.png" />
   </head>
   <body>
     <!-- Navbar Desktop -->
@@ -80,22 +81,6 @@
 
     <script type="text/javascript" src="assets/js/materialize.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-      // REGISTER SERVICE WORKER
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker
-            .register("/service-worker.js")
-            .then(function () {
-              console.log("Pendaftaran ServiceWorker berhasil");
-            })
-            .catch(function () {
-              console.log("Pendaftaran ServiceWorker gagal");
-            });
-        });
-      } else {
-        console.log("ServiceWorker belum didukung browser ini.");
-      }
-    </script>
+    <script src="assets/js/register-service-worker.js"></script>
   </body>
 </html>
