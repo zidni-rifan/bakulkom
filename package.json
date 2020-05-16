@@ -7,7 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/zidni-rifan/bakulkom/issues"
   },
-  "homepage": "https://github.com/zidni-rifan/bakulkom#readme"
+  "homepage": "https://github.com/zidni-rifan/bakulkom#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
 }
