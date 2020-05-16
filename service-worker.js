@@ -1,7 +1,8 @@
 const CACHE_NAME = "bakulkom-v1";
-var urlsToCache = [
+const urlsToCache = [
   "/",
   "/index.html",
+  "/manifest.json",
   "/pages/home.html",
   "/pages/cart.html",
   "/pages/favorite.html",
@@ -37,40 +38,38 @@ var urlsToCache = [
   "assets/images/msi-rtx.jpg",
 ];
 
-self.addEventListener("install", function (event) {
+self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(function (cache) {
+    caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(urlsToCache);
     })
   );
 });
 
-self.addEventListener("fetch", function (event) {
+self.addEventListener("fetch", (event) => {
   event.respondWith(
-    caches
-      .match(event.request, { cacheName: CACHE_NAME })
-      .then(function (response) {
-        if (response) {
-          console.log("ServiceWorker: Gunakan aset dari cache: ", response.url);
-          return response;
-        }
+    caches.match(event.request, { cacheName: CACHE_NAME }).then((response) => {
+      if (response) {
+        console.log("ServiceWorker: Gunakan aset dari cache: ", response.url);
+        return response;
+      }
 
-        console.log(
-          "ServiceWorker: Memuat aset dari server: ",
-          event.request.url
-        );
-        return fetch(event.request);
-      })
+      console.log(
+        "ServiceWorker: Memuat aset dari server: ",
+        event.request.url
+      );
+      return fetch(event.request);
+    })
   );
 });
 
-self.addEventListener("activate", function (event) {
+self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then(function (cacheNames) {
+    caches.keys().then((cacheNames) => {
       return Promise.all(
-        cacheNames.map(function (cacheName) {
+        cacheNames.map((cacheName) => {
           if (cacheName != CACHE_NAME) {
-            console.log("ServiceWorker: cache " + cacheName + " dihapus");
+            console.log(`ServiceWorker: cache ${cacheName} dihapus`);
             return caches.delete(cacheName);
           }
         })
