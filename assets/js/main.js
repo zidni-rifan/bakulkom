@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   document
-    .querySelectorAll(
-      "#nav-desktop img, #nav-desktop .brand-logo, #nav-mobile img"
-    )
+    .querySelectorAll("#nav-desktop img, .brand-logo, #nav-mobile img")
     .forEach(function (elm) {
       elm.addEventListener("click", function (event) {
         page = event.target.parentElement.getAttribute("href").substr(1);

@@ -58,6 +58,29 @@ li img {
   margin-top: 20px;
 }
 
+.min,
+.number,
+.plus {
+  padding: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 1px solid black;
+  font-size: 1.2rem;
+}
+
+.profile img {
+  margin-top: 40px;
+  margin-bottom: -20px;
+}
+
+.menu-profile {
+  color: black;
+  font-size: 1.3rem;
+  display: block;
+  padding: 0.5rem 0 0.5rem 0;
+  border-bottom: 1px solid black;
+}
+
 @media screen and (max-width: 768px) {
   .jumbotron h1 {
     font-size: 5em;
@@ -111,8 +134,13 @@ li img {
     left: 7.5%;
     transform: translateX(0);
   }
+
   #top-nav-mobile #search-mobile {
     margin-top: 10px;
     width: 350px;
+  }
+
+  .profile {
+    text-align: center;
   }
 }
