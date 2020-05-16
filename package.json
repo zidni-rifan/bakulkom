@@ -1,0 +1,22 @@
+{
+  "name": "bakulkom",
+  "version": "1.0.0",
+  "description": "submission pwa pertama",
+  "main": "src/js/main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zidni-rifan/bakulkom.git"
+  },
+  "author": "zidni rif'an",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zidni-rifan/bakulkom/issues"
+  },
+  "homepage": "https://github.com/zidni-rifan/bakulkom#readme"
+}
