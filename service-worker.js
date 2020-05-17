@@ -11,6 +11,7 @@ const urlsToCache = [
   "lib/css/materialize.min.css",
   "lib/js/materialize.min.js",
   "src/js/main.js",
+  "src/js/register-service-worker.js",
   "assets/icons/avatar.svg",
   "assets/icons/cart-white.svg",
   "assets/icons/cart.svg",
